@@ -1,123 +1,409 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio of Abhilash, a passionate fantasy fiction writer, tech enthusiast, and anime lover.">
-    <meta name="keywords" content="Portfolio, Abhilash, Fantasy Fiction, Tech Enthusiast, Anime, Web Development, AI">
-    <meta name="author" content="Abhilash C">
-    <title>Portfolio</title>
-    <!-- Link to external CSS -->
-    <link rel="stylesheet" href="/CSS/Style.css">
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Abhilash C | Aspiring Software Developer</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
-        <nav>
-            <div class="hamburger" onclick="toggleMenu()">
-                &#9776; <!-- Hamburger icon -->
-            </div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+
+<!-- Side Navigation (Desktop) -->
+<nav class="side-nav d-none d-lg-flex flex-column align-items-center justify-content-between">
+  <div class="w-100 text-center mt-4">
+    <img src="Assets/images/abhi_profile.png" alt="Abhilash C logo" style="width:90px;">
+    <div class="mt-2 mb-4" style="color:var(--accent);font-size:1.5rem;font-weight:700;">Abhilash C</div>
+    <ul class="nav flex-column w-100">
+      <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+      <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+      <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+      <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+      <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+    </ul>
+  </div>
+  <div class="mb-4 text-center">
+    <div class="d-flex justify-content-center gap-3 mb-2">
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-envelope"></i></a>
+    </div>
+    <div style="color:var(--accent);font-weight:700;">Connect</div>
+  </div>
+</nav>
+<!-- Top Navigation (Mobile/Tablet) -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top shadow-futuristic animate-fade-in-down d-lg-none">
+  <div class="container">
+    <a class="navbar-brand" href="#">Abhilash C</a>
+    <button class="navbar-toggler futuristic-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span style="display:inline-block;width:30px;height:22px;position:relative;">
+        <span class="bar bar1" style="position:absolute;left:0;right:0;height:4px;background:var(--accent);top:0;border-radius:2px;transition:.4s;"></span>
+        <span class="bar bar2" style="position:absolute;left:0;right:0;height:4px;background:var(--accent);top:9px;border-radius:2px;transition:.4s;"></span>
+        <span class="bar bar3" style="position:absolute;left:0;right:0;height:4px;background:var(--accent);top:18px;border-radius:2px;transition:.4s;"></span>
+      </span>
+    </button>
+    <div class="collapse navbar-collapse futuristic-nav" id="navbarNav">
+      <ul class="navbar-nav ms-auto text-center">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- Hero Section -->
+<section class="hero-futuristic animate-fade-in" id="home">
+  <div class="hero-bg-person"></div>
+  <div class="container">
+    <span class="badge bg-dark text-uppercase mb-3" style="background:rgba(75,227,183,0.12);color:var(--accent);font-weight:700;letter-spacing:1px;">Abhilash C</span>
+    <h1 class="display-3 fw-bold" style="line-height:1.1;">
+      ASPIRING<br>
+      <span style="color:var(--accent);">SOFTWARE DEVELOPER</span>
+    </h1>
+    <p class="lead mb-4">Building modern, scalable, and impactful digital solutions.<br>Let’s create something amazing together.</p>
+    <a href="#portfolio" class="btn btn-futuristic btn-lg mt-2 animate-pop-in" style="animation-delay:0.4s;">View My Work &rarr;</a>
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-futuristic animate-fade-in-up">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-4 text-center mb-4 mb-md-0">
+        <img src="Assets/images/abhi_background.png" alt="Abhilash C" class="img-fluid rounded-circle shadow hero-img-futuristic animate-pop-in" style="width: 180px;">
+      </div>
+      <div class="col-md-8">
+        <h2 class="section-title animate-slide-up">About Me</h2>
+        <p class="futuristic-lead animate-fade-in" style="animation-delay:0.2s;">
+          Hi, I'm <strong>Abhilash C</strong>, an aspiring software developer passionate about building web and mobile applications. I love solving real-world problems with code and I am always eager to learn new technologies.
+        </p>
+        <ul class="list-unstyled animate-fade-in" style="animation-delay:0.4s;">
+          <li><strong>Experience:</strong> Internship at EvoluteIQ, Business process automation Intern</li>
+          <li><strong>Education:</strong> B.E in Computer Science, Sahyadri collage of Engineering and Management (2021-2024)</li>
+          <li><strong>Interests:</strong> Full Stack Development, Open Source, UI/UX Design, AI/ML, GenAI</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills Section -->
+<section id="skills" class="py-5 bg-futuristic-dark animate-fade-in-up">
+  <div class="container">
+    <h2 class="section-title text-center animate-slide-up">Skills</h2>
+    <div class="row">
+      <!-- Frontend -->
+      <div class="col-md-4 mb-4">
+        <div class="card futuristic-card h-100 shadow-futuristic animate-pop-in">
+          <div class="card-body">
+            <h5 class="card-title" style="color:var(--accent);"><i class="fas fa-laptop-code me-2"></i>Frontend</h5>
+            <ul class="list-unstyled mb-0">
+              <li>HTML5 <div class="progress my-1"><div class="progress-bar" style="width: 95%"></div></div></li>
+              <li>CSS3 <div class="progress my-1"><div class="progress-bar" style="width: 90%"></div></div></li>
+              <li>JavaScript <div class="progress my-1"><div class="progress-bar" style="width: 85%"></div></div></li>
+              <li>Bootstrap <div class="progress my-1"><div class="progress-bar" style="width: 90%"></div></div></li>
             </ul>
-        </nav>
-    </header>
+          </div>
+        </div>
+      </div>
+      <!-- Backend -->
+      <div class="col-md-4 mb-4">
+        <div class="card futuristic-card h-100 shadow-futuristic animate-pop-in" style="animation-delay:0.1s;">
+          <div class="card-body">
+            <h5 class="card-title" style="color:var(--accent);"><i class="fas fa-server me-2"></i>Backend</h5>
+            <ul class="list-unstyled mb-0">
+              <li>Node.js <div class="progress my-1"><div class="progress-bar" style="width: 75%"></div></div></li>
+              <li>Express.js <div class="progress my-1"><div class="progress-bar" style="width: 70%"></div></div></li>
+              <li>Python <div class="progress my-1"><div class="progress-bar" style="width: 80%"></div></div></li>
+              <li>MySQL <div class="progress my-1"><div class="progress-bar" style="width: 75%"></div></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Tools -->
+      <div class="col-md-4 mb-4">
+        <div class="card futuristic-card h-100 shadow-futuristic animate-pop-in" style="animation-delay:0.2s;">
+          <div class="card-body">
+            <h5 class="card-title" style="color:var(--accent);"><i class="fas fa-tools me-2"></i>Tools</h5>
+            <ul class="list-unstyled mb-0">
+              <li>Git & GitHub <div class="progress my-1"><div class="progress-bar" style="width: 85%"></div></div></li>
+              <li>VS Code <div class="progress my-1"><div class="progress-bar" style="width: 90%"></div></div></li>
+              <li>Figma <div class="progress my-1"><div class="progress-bar" style="width: 70%"></div></div></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-    <!-- Main Content -->
-    <main>
-        <!-- About Section -->
-        <section id="about">
-            <h1>About Me</h1>
-            <img src="Assets/Images/Abhi_pass.JPG" alt="Profile Picture" width="200" height="200">
-            <p>About Abhilash
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-5 bg-futuristic animate-fade-in-up">
+  <div class="container">
+    <h2 class="section-title text-center animate-slide-up">Portfolio</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card futuristic-card h-100 shadow-futuristic animate-pop-in">
+          <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Personal Blog Website</h5>
+            <p class="card-text">A responsive blog platform built with Node.js and Bootstrap, featuring user authentication and CRUD operations.</p>
+            <a href="#" class="btn btn-outline-futuristic btn-sm" target="_blank">View Live</a>
+            <a href="#" class="btn btn-outline-futuristic2 btn-sm" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card futuristic-card h-100 shadow-futuristic animate-pop-in" style="animation-delay:0.1s;">
+          <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Task Manager App</h5>
+            <p class="card-text">A full-stack task management app with real-time updates, built using Express.js, Socket.io, and MySQL.</p>
+            <a href="#" class="btn btn-outline-futuristic btn-sm" target="_blank">View Live</a>
+            <a href="#" class="btn btn-outline-futuristic2 btn-sm" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card futuristic-card h-100 shadow-futuristic animate-pop-in" style="animation-delay:0.2s;">
+          <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Portfolio Website</h5>
+            <p class="card-text">A modern, responsive portfolio website to showcase my projects and skills. Built with HTML, CSS, Bootstrap, and JS.</p>
+            <a href="#" class="btn btn-outline-futuristic btn-sm" target="_blank">View Live</a>
+            <a href="#" class="btn btn-outline-futuristic2 btn-sm" target="_blank">Source Code</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-                Abhilash is a passionate fantasy fiction writer, tech enthusiast, and anime lover from Kasaragod, Kerala. He completed his BE in Computer Science from Sahyadri College of Engineering and Management in 2024, achieving a 7 CGPA.<br>  
-                
-                Technical & Professional Background<br>
-                - Proficient in C, C++, Java, Python, HTML, CSS, and JavaScript.<br>
-                - Internship at EvoluteIQ Solutions Pvt. Ltd. – Worked on the Sperm Bank Management System under the guidance of Akshay Bhat, SDE at EIQ. <br>
-                - Project: Doctor Assistant Using AI** – Developed an AI-based disease prediction system to assist doctors in diagnosing ailments efficiently.  <br>
-                - Strong interest in AI, software development, and emerging technologies. <br>
-                - Currently learning ReactJS and NodeJS to enhance web development skills. <br>  
-                
-                Creative & Writing Endeavors  <br>
-                - Developing a fantasy cultivation universe set in **Bharatha Bhoomi, inspired by **Hindu, Taoist, and Buddhist philosophies.  <br>
-                - Worldbuilding includes **divine armors, elemental cultivation, spirit beasts, legendary weapons, and kingdom wars**.  <br>
-                - Characters like **Karna, Sagara, Dhrona, and Jwala** play key roles in an epic struggle of mortals and gods.  <br>
-                - Inspired by anime, manga, and web novels like **Dragon Ball Z, Bakugan, and Chinese cultivation stories**.  <br>
-                
-                Personal Interests & Goals  <br>
-                - Loves anime, action movies, reading web novels, and exploring new technologies.  <br>
-                - Fitness-conscious, aiming for a budget-friendly diet and simple workouts to stay in shape.  <br>
-                - Short-term goal: Secure a tech job.  <br>
-                - Long-term goal: Grow in career & financial stability while continuing to build fantasy worlds and stories.  <br>
-                
-                I am a creative thinker with a blend of technical expertise and storytelling passion, striving to make an impact in both fields. 🚀</p>
-        </section>
+<!-- Resume Section -->
+<section id="resume" class="py-5 bg-futuristic-dark animate-fade-in-up">
+  <div class="container">
+    <h2 class="section-title text-center animate-slide-up">Resume</h2>
+    <div class="text-center mb-4">
+      <a href="Assets/Resume/Abhilash_SDE_CV.pdf" class="btn btn-futuristic animate-pop-in" download>
+        <i class="fas fa-download me-2"></i>Download Resume (PDF)
+      </a>
+    </div>
+    <div class="timeline mx-auto" style="max-width: 600px;">
+      <div class="timeline-event animate-fade-in" style="animation-delay:0.1s;">
+        <h5>B.E in Computer Science</h5>
+        <small class="text-muted">Sahyadri collage of Engineering and Management | 2021 - 2024</small>
+        <p>Relevant coursework: Data Structures, Algorithms, Web Development, DBMS, AI/ML</p>
+      </div>
+      <div class="timeline-event animate-fade-in" style="animation-delay:0.2s;">
+        <h5>Software Development Intern</h5>
+        <small class="text-muted">EvoluteIQ | Summer 2024</small>
+        <p>Worked on EvoluteIQ business process automation platform as a BPA intern. Develped and tested application in the platform using process flow.</p>
+      </div>
+      <div class="timeline-event animate-fade-in" style="animation-delay:0.3s;">
+        <h5>Freelance Web Developer</h5>
+        <small class="text-muted">2023 - Present</small>
+        <p>Developed websites and web apps for small businesses and startups.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <!-- Projects Section -->
-        <section id="projects">
-            <h1>Projects</h1>
-            <p>Here are some of the projects I have worked on:</p>
-            <div class="project-cards">
-                <!-- Project 1 -->
-                <div class="card">
-                    <h2>Doctor Assistant Using AI</h2>
-                    <p>An AI-based disease prediction system to assist doctors in diagnosing ailments efficiently.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-                <!-- Project 2 -->
-                <div class="card">
-                    <h2>Sperm Bank Management System</h2>
-                    <p>Developed during an internship at EvoluteIQ Solutions Pvt. Ltd., guided by Akshay Bhat, SDE at EIQ.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-                <!-- Project 3 -->
-                <div class="card">
-                    <h2>Portfolio Website</h2>
-                    <p>A personal portfolio website showcasing my skills, projects, and contact information.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-                <!-- Project 4 -->
-                <div class="card">
-                    <h2>Fantasy Worldbuilding</h2>
-                    <p>Developing a fantasy cultivation universe inspired by Hindu, Taoist, and Buddhist philosophies.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-                <!-- Project 5 -->
-                <div class="card">
-                    <h2>Weather App</h2>
-                    <p>A simple weather application using APIs to fetch real-time weather data for any location.</p>
-                    <a href="#" class="btn">View Details</a>
-                </div>
-            </div>
-        </section>
-        <!-- Contact Section -->
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Provide your contact details by filling contact form here.</p>
-        </section>
-        <section>
-            <form action="">
-                <input type="text" id="name" placeholder="Name" required> <br>
-                <input type="email" id="mail" placeholder="Email" required> <br>
-                <input type="tel" name="phone" placeholder="Phone" required> <br>
-                <textarea id="msg" placeholder="Message" required></textarea> <br>
-                <button type="submit">Send</button> <br>
-                <button type="reset">Reset</button> <br>
-            </form>
-        </section>
-    </main>
-    <script src="/js/script.js"></script>
+<!-- Testimonials Section -->
+<section id="testimonials" class="py-5 bg-futuristic animate-fade-in-up">
+  <div class="container">
+    <h2 class="section-title text-center animate-slide-up">Testimonials</h2>
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active text-center animate-fade-in">
+          <blockquote class="blockquote">
+            <p class="mb-4">"Abhilash is a quick learner and a dedicated developer. His work on our project exceeded expectations!"</p>
+            <footer class="blockquote-footer">Priya S., Project Manager at CodeLabs</footer>
+          </blockquote>
+        </div>
+        <div class="carousel-item text-center animate-fade-in" style="animation-delay:0.2s;">
+          <blockquote class="blockquote">
+            <p class="mb-4">"Professional, creative, and reliable. Highly recommend for web development projects."</p>
+            <footer class="blockquote-footer">Rahul M., Startup Founder</footer>
+          </blockquote>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </div>
+  </div>
+</section>
 
-    <!-- Footer Section -->
-    <footer>
-        <p>&copy; 2023 Abhilash C. All rights reserved.</p>
-    </footer>
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-futuristic-dark animate-fade-in-up">
+  <div class="container">
+    <h2 class="section-title text-center animate-slide-up">Contact</h2>
+    <div class="row g-4 align-items-center">
+      <div class="col-md-5 text-center">
+        <img src="Assets/images/abhi_contact.png" alt="Abhilash C" class="img-fluid rounded-4 shadow" style="width:180px;object-fit:cover;">
+        <div class="mt-4">
+          <p class="mb-1" style="color:var(--text-muted);">or write an e-mail</p>
+          <p class="fw-bold" style="font-size:1.3rem;color:var(--accent);">abhilashchandra26@email.com</p>
+          <div class="d-flex justify-content-center gap-3 mt-3">
+            <a href="https://github.com/abhilash-dev-glitch" class="btn btn-light rounded-3" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abhilash-chandra-529b74260?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="btn btn-light rounded-3" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="btn btn-light rounded-3" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="btn btn-light rounded-3" style="width:48px;height:48px;display:flex;align-items:center;justify-content:center;"><i class="fab fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-7">
+        <form id="contactForm" class="animate-pop-in">
+          <div class="mb-3">
+            <label for="name" class="form-label">Full Name *</label>
+            <input type="text" class="form-control" id="name" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address *</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Your message..</label>
+            <textarea class="form-control" id="message" rows="3" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-futuristic w-100">Send a message</button>
+        </form>
+        <div id="formAlert" class="alert alert-success mt-3 d-none animate-fade-in" role="alert">
+          Thank you! Your message has been sent.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer bg-futuristic text-light animate-fade-in-up">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-md-start mb-2 mb-md-0">
+        &copy; 2025 Abhilash C. All rights reserved.
+      </div>
+      <div class="col-md-6 text-md-end">
+        <div class="social-icons d-inline">
+          <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+          <a href="#" target="_blank"><i class="fab fa-envelope"></i></a>
+        </div>
+        <span class="ms-3">
+          <a href="#home" class="text-decoration-none" style="color:var(--accent);">Home</a> |
+          <a href="#about" class="text-decoration-none" style="color:var(--accent);">About</a> |
+          <a href="#contact" class="text-decoration-none" style="color:var(--accent);">Contact</a>
+        </span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Person image background for hero section -->
+<style>
+.hero-futuristic {
+  position: relative;
+  overflow: hidden;
+}
+.hero-futuristic::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(90deg, #143235 55%, rgba(20,50,53,0.7) 100%);
+  z-index: 2;
+}
+.hero-futuristic .container {
+  position: relative;
+  z-index: 3;
+}
+@media (max-width: 991px) {
+  .hero-bg-person {
+    width: 100vw;
+    min-width: 0;
+    opacity: 0.25;
+    filter: blur(2px) brightness(0.8);
+  }
+  .hero-futuristic .container {
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: 767px) {
+  .hero-futuristic {
+    min-height: 60vh;
+  }
+  .hero-bg-person {
+    display: none;
+  }
+}
+.side-nav {
+  position: fixed;
+  left: 0; top: 0; bottom: 0;
+  width: 320px;
+  background: #183235;
+  z-index: 1050;
+  box-shadow: 2px 0 24px 0 rgba(20,50,53,0.12);
+  padding: 0;
+}
+.side-nav .nav-link {
+  color: #7fffd4 !important;
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 1rem 0;
+  transition: color 0.2s, background 0.2s;
+  border-radius: 0;
+  text-align: left;
+}
+.side-nav .nav-link.active,
+.side-nav .nav-link:hover {
+  color: var(--accent) !important;
+  background: rgba(75,227,183,0.08);
+}
+.side-nav ul.nav {
+  width: 100%;
+  margin-top: 2rem;
+}
+.side-nav .fab {
+  color: var(--accent);
+  font-size: 1.4rem;
+  margin: 0 0.3rem;
+  transition: color 0.2s;
+}
+.side-nav .fab:hover {
+  color: #fff;
+}
+@media (max-width: 1199px) {
+  .side-nav { width: 220px; }
+}
+@media (max-width: 991px) {
+  .side-nav { display: none !important; }
+}
+@media (min-width: 992px) {
+  body {
+    margin-left: 320px;
+  }
+  .hero-futuristic .container,
+  section .container,
+  footer .container {
+    margin-left: 0;
+    max-width: 900px;
+  }
+}
+</style>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
